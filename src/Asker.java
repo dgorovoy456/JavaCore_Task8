@@ -2,11 +2,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Asker {
-    private static String createCompany = "createCompany";
-    private static String addEmployee = "addEmployee";
-    private static String printMaxEmployeeSalary = "printMaxEmployeeSalary";
-    private  static String averageSalary = "averageSalary";
-    private static String getEmployeeSalary = "getEmployeeSalary";
+    private static String createCompany = "1";
+    private static String addEmployee = "2";
+    private static String printMaxEmployeeSalary = "3";
+    private  static String averageSalary = "4";
+    private static String getEmployeeSalary = "5";
     public static void main(String[] args) {
         runner("Enter command:");
     }
@@ -14,11 +14,11 @@ public class Asker {
         Company company = null;
         while (true) {
             System.out.println("Useful commands:");
-            System.out.println(createCompany);
-            System.out.println(addEmployee);
-            System.out.println(printMaxEmployeeSalary);
-            System.out.println(averageSalary);
-            System.out.println(getEmployeeSalary);
+            System.out.println("1 - " +"createCompany");
+            System.out.println("2 - "+"addEmployee");
+            System.out.println("3 - "+"printMaxEmployeeSalary");
+            System.out.println("4 - "+"averageSalary");
+            System.out.println("5 - "+ "getEmployeeSalary");
             System.out.println(question);
             Scanner scanner = new Scanner(System.in);
             String command = scanner.next();
