@@ -12,7 +12,7 @@ public class Main {
         gl.addEmployee(dima);
 
         gl.printMaxEmployeeSalary();
-       // gl.removeEmployee(dima);
+        gl.removeEmployee(dima);
         gl.removeEmployee("Vasya","093926662", 23000);
         long avSalary = gl.averageSalary();
         System.out.println(avSalary);

@@ -8,6 +8,7 @@ public class Asker {
     private static String printMaxEmployeeSalary = "3";
     private  static String averageSalary = "4";
     private static String getEmployeeSalary = "5";
+    private static String removeEmployee ="6";
     public static void main(String[] args) throws InterruptedException {
         runner("Enter command:");
     }
@@ -21,6 +22,7 @@ public class Asker {
             System.out.println("3 - "+"printMaxEmployeeSalary");
             System.out.println("4 - "+"averageSalary");
             System.out.println("5 - "+ "getEmployeeSalary");
+            System.out.println("6 - "+ "removeEmployee");
             System.out.println(question);
             Scanner scanner = new Scanner(System.in);
             String command = scanner.next();
@@ -78,7 +80,16 @@ public class Asker {
                     String phone = scanner.next();
                     salary = company.getEmployeeSalary(name, phone);
                     System.out.println(salary);
-                }
+                }else if (command.equals(removeEmployee)) {
+                     System.out.println("Pls enter employee's name");
+                     scanner=new Scanner(System.in);
+                     String name =scanner.next();
+                     System.out.println("Pls enter employee's phone");
+                     scanner=new Scanner(System.in);
+                     String phone = scanner.next();
+                     company.removeEmployee(name,phone,salary);
+                     System.out.println(name+ " removed");
+                 }
             }
             }
         }
