@@ -7,13 +7,11 @@ public class Company {
     private String address;
     private String phoneCompany;
     private List<Employee> employees;
-
     public Company(String name, String address, String phoneCompany) {
         this.name = name;
         this.address = address;
         this.phoneCompany = phoneCompany;
         this.employees= new ArrayList<>();
-
     }
 
     public void printMaxEmployeeSalary () {
