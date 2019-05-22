@@ -26,8 +26,6 @@ public class Asker {
             System.out.println(question);
             Scanner scanner = new Scanner(System.in);
             String command = scanner.next();
-
-
                 if (command.equals(createCompany)) {
                     System.out.println("Pls enter company's name:");
                     scanner = new Scanner(System.in);
@@ -40,7 +38,7 @@ public class Asker {
                     String address = scanner.next();
                     company = new Company(name, phone, address);
                 }
-            if (company!=null) {
+                if (company!=null) {
                  if (command.equals(addEmployee)) {
                     System.out.println("Pls enter employee's name:");
                     scanner = new Scanner(System.in);
@@ -56,9 +54,7 @@ public class Asker {
                     catch (Exception e) {
                         System.out.println("Pls enter numeric value");
                         Thread.sleep(2000);
-
                      }
-
                     if (salary >= 2000) {
                         Employee employee = Employee.newEmployee(name, phone, salary);
                         company.addEmployee(employee);
