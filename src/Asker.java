@@ -87,6 +87,10 @@ public class Asker {
                      System.out.println(name+ " removed");
                  }
             }
+                else {
+                    System.out.println("First create company");
+                    Thread.sleep(1000);
+                }
             }
         }
 
