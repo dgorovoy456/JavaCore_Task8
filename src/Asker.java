@@ -1,5 +1,7 @@
+import java.sql.Time;
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Asker {
 
@@ -88,6 +90,7 @@ public class Asker {
                  }
             }
                 else {
+                    TimeUnit.SECONDS.sleep(2);
                     System.out.println("First create company");
                     Thread.sleep(1000);
                 }
